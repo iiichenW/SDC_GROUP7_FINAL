@@ -1,0 +1,16 @@
+library(sp)
+library(sf)
+library(rgdal) 
+library(tidyr)
+library(geojson)
+library(geojsonio)
+
+luxury_market = read.csv("Revenue of luxury goods market.csv")
+names(luxury_market) = c("country","year","value")
+luxury_market = spread(luxury_market,year,value)
+names(luxury_market) = c("country","year2012","year2013","year2014","year2015","year2016","year2017","year2018")
+
+countries_json = read_sf("countries.geojson")
+countries_json = merge(countries_json,luxury_market,by.x = "ADMIN",by.y = "country",all.x = TRUE)
+countries_json = sf:::as_Spatial(countries_json)
+writeOGR(countries_json, dsn="test.GeoJSON", layer="countries_json", driver="GeoJSON")
