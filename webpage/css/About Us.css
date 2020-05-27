@@ -1,0 +1,112 @@
+
+
+/* top______________________________________________________ */
+.top{
+   margin: 0px auto;  
+   position: relative; 
+   height: 550px;
+}
+
+.pic img{
+   height: 100px; 
+   height: 100px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   margin-left: 40px;
+   
+}
+.pic{
+   margin: 0 8%;
+   display: block;
+   width: 100%; 
+}
+.pic p{
+   margin-top: 20px;
+   text-align: justify;
+}
+.pic1,.pic2,.pic3,.pic4{
+   width: 18%;
+   float: left;
+   margin: 15px;
+   height: 350px;
+   background-color: rgb(245, 245, 245);
+   border-radius: 10px;
+   box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+}
+.pic2 img, .pic3 img,.pic4 img{
+   margin-left: 45px;
+}
+.pic1 p,.pic2 p,.pic3 p,.pic4 p{
+ text-align: center;
+ padding: 0 5px;
+}
+
+
+.top .title1{
+   text-align: center;
+   font-size: 16px;
+   line-height: 1.5;
+   margin:100px auto 10px;
+   font-family:me;
+   color: rgba(173, 173, 173, 0.884);
+   font-weight: bold;
+   
+ }
+ .top .title1 em{
+    color: coral;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    text-shadow: none;
+    font-family:me;
+   
+          
+  }
+.top::before{content: "";display: table;}
+/* cite___________________________ */
+.middle{
+   margin: 20px auto; 
+   position: relative;   
+   margin-top: 40px;
+   
+}
+.middle p{
+   text-align: center;
+   font-size: 16px;
+   line-height: 1.5;
+   margin:30px auto 10px;
+
+   
+ }
+ .middle p em{
+    color: coral;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    text-shadow: none;
+    font-family:me;
+          
+  }
+.world p{
+   text-align: left;
+   font-size: 14px;
+   width: 100%;
+}
+.world .em0{
+   font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.world p em{
+   font-size: 14px;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+}
+.world{
+   margin: 0 8%;
+   margin-bottom: 60px;
+}
+.middle{
+   border-left: coral 2px solid;
+   padding: 40px auto;
+}

@@ -1,0 +1,377 @@
+
+
+
+
+/*top image__________________________________*/
+      .top-img{
+          width: 100%;height:570px; margin: 0px auto;
+          background-size: 80%;
+          background-image: url(../img/topnew1.png);
+          background-position: 50% -130px;     
+          position: relative;   
+      }
+      .top-img h3{
+          text-align: center;
+          font-size: 30px;
+          line-height: 1.4;
+          color: rgb(202, 104, 34);
+          font-weight: 900;
+          margin-top: 360px;
+          font-family:me;
+          
+        }
+        .top-img h3 em{
+           color: rgba(226, 226, 226, 0.651);
+           font-weight: bold;
+           font-size: 24px;
+           text-shadow: none;
+           
+         }
+         #sub{
+            color:coral;
+            font-size: 30px;
+            line-height: 1.4;
+            font-weight: 900;
+            margin-top: 360px;
+            font-family:me;
+            font-style: normal;
+
+         }
+      .top-img::before{content: "";display: table;}
+      .scroll a{ 
+         width: 100px;
+         height: 30px;
+         font-size: 14px;
+         color: rgba(194, 194, 194, 0.65);
+         border: rgb(145, 144, 144) 1px solid;
+         border-radius: 3px;
+         padding:3px 5px;
+         position: absolute;
+         left: 0;right: 0;margin-left: auto;margin-right: auto;
+         top: 480px;bottom: 0;margin-top: auto;margin-bottom: auto;
+       }
+     .scroll a:hover{
+        color: rgba(233, 232, 232, 0.884); 
+        border: rgba(233, 232, 232, 0.884) 1px solid;
+     }
+      
+
+      .here{
+         position: absolute;
+          left: 0;right: 0;margin-left: auto;margin-right: auto;
+          top: 530px;bottom: 0;margin-top: auto;margin-bottom: auto;
+
+      }
+
+
+      /*body introduction1__________________________________*/
+      .intro1{
+         position: relative;
+         margin: 10px auto;
+      }
+      .luxury{
+         width: 100%;
+         height: 250px;
+         background-color: rgb(245, 245, 245);
+         margin-top: 5px;
+         border-radius: 10px;
+         box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+      }
+      .left1{
+         width: 30%;
+         height: 240px;
+         background-image: url(../img/luxury.jpg);
+         background-size: cover;
+         box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+         border-radius: 10px;
+         margin: 5px;
+         float: left;
+      }
+      .luxury p{
+         width: 55%;
+         height: auto;
+         margin: 30px 60px;
+         float: left;    
+      }
+      .luxury em{
+         font: 18px/3 bolder coral;
+         font-weight: bold;
+         font-family:me;
+      }
+      .animal{
+         width: 100%;
+         height: 250px;
+         background-color: rgb(245, 245, 245);
+         margin-top: 5px;
+         border-radius: 10px;
+         box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+      }
+      .right{
+         width: 30%;
+         height: 240px;
+         background-image: url(../img/animalcry.png);
+         background-size: cover;
+         box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+         border-radius: 10px;
+         margin: 5px;
+         float: right;
+      }
+      .animal p{
+         width: 55%;
+         height: auto;
+         margin: 30px 60px;
+         float: left;    
+      }
+      .animal em{
+         font: 18px/3  coral;
+         font-weight: bold;
+         font-family:me;
+      }
+      
+      .here2{
+         position: absolute;
+          left: 0;right: 0;margin-left: auto;margin-right: auto;
+          top: 1530px;bottom: 0;margin-top: auto;margin-bottom: auto;
+
+      }
+      
+      /*body introduction2__________________________________*/
+      .intro2{
+         margin: 0 auto;
+         position: relative;
+      }
+      .intro2 .top{
+         width: 80%;
+         height: 120px;
+         background-color: rgba(0, 0, 0, 0.411);
+         background-image: url(../img/tiger大3.png); 
+         background-size: cover;
+         margin: 0px auto 0 auto;
+   
+      }
+      .intro2 p{
+         position: absolute;
+         left: 30%;right: 0;margin-left: auto;margin-right: auto;
+         top: 90px;bottom: 0;margin-top: auto;margin-bottom: auto;
+         text-align: center;
+         z-index: 999;
+         width: 70%;
+         height: 150px;
+         float: right; 
+           
+      }
+      .em1{
+         font-size: 24px;
+         font-weight: bold;
+         color: rgb(0, 0, 0);
+         font-style: normal;
+         text-shadow:2px 2px 10px rgba(255, 0, 0, 0.24);
+         font-family:me;
+      }
+      .em2{
+         font-weight: bold;
+         color: rgba(0, 0, 0, 0.4);
+         font-family:me;
+      }
+      /*body playerframe__________________________________*/
+      .playerframe{
+         height: 380px;
+         background-image: url(../img/bone1.png);
+         background-repeat: repeat;
+         margin-top: 10px;
+         border-radius: 10px;
+         box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+      }
+      .pleft em{
+         font: 18px/3 bolder coral;
+         font-weight: bold;
+         font-family:me;
+      }
+      .pleft {
+         float: left;
+         height: 300px;
+         width: 30%;
+         margin: 60px;
+         margin-right: auto;
+         overflow: auto;
+         color: rgb(245, 245, 245);
+         text-align: justify;
+      }
+      .pplayer{
+         width: 600px;
+         height: 360px;
+         background-color: rgb(0, 0, 0);
+         box-shadow:3px 3px 10px   rgba(255, 255, 255, 0.585);
+         position: relative;
+         float: right;
+         border-radius: 10px;
+         margin-top: 10px;
+         margin:5px;
+      }
+      .player{
+         width:580px;
+         height: 420px; 
+         margin-top: -10px;  
+         position: absolute;
+         left: 0;right: 0;margin-left: auto;margin-right: auto;
+         top: 0;bottom: 0;margin-top: auto;margin-bottom: auto;
+      }
+      .player::before{
+         content: '';display: table;
+      }
+
+      .here3{
+          position: absolute;
+          left: 0;right: 0;margin-left: auto;margin-right: auto;
+          top: 2605px;bottom: 0;margin-top: auto;margin-bottom: auto;
+
+      }
+      /*body lastpart__________________________________*/
+      .last{
+         height: 550px;
+         /* border: black 1px solid; */
+      }
+     .lworld{
+        margin: 50px;
+        text-align: center;
+        line-height: 1;
+     }
+     .em4{
+        font-size: 20px;
+        color: black;
+        font-style: normal;
+        font-weight: bolder;
+        font-family:me;
+     }
+     .em5{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+        font-family:me;
+        color: rgba(0, 0, 0, 0.4);
+     }
+     .lleft,.lright{
+        margin: 5px;
+     }
+     .lleft .pic{
+        float: left;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 80px;
+        margin-left: 100px;
+        box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+     }
+     .lleft .world{
+        float: left;
+        width: 60%;
+        overflow: auto;
+        margin: 20px 5% 20px auto;
+        padding-left: 50px;
+     }
+    
+   .lright .world{
+      float: left;
+      width: 60%;
+      overflow: auto;
+      margin: 20px auto 20px 10%;
+      
+   }
+   .lright .pic{
+      float: right;
+      width: 160px;
+      height: 160px;
+      overflow: hidden;
+      border-radius: 80px;
+      margin-right: 100px;
+      box-shadow:3px 3px 10px rgba(110, 110, 110, 0.9);
+   }
+   .em7 {
+      font-size: 16px;
+      color: coral;
+      font-weight: bold;
+      font-style: normal;
+      font-family:me;
+   }
+   .click1{
+      margin-top: -100px;
+      font-size: 16px; 
+      padding-bottom: 10px;
+      padding-left: 42px;
+      color: white; 
+      font-weight: bold;
+      font-style: italic;
+      
+   }
+   .click2{
+      margin-top: -90px;
+      font-size: 16px; 
+      padding-bottom: 10px;
+      padding-left: 42px;
+      color:white; 
+      font-weight: bold;
+      font-style: italic;
+   }
+   .lleft .pic:hover .click1{
+      font-size: 18px;
+      margin-top: -101px;
+      padding-left: 40px;
+   }
+   .lleft .pic:hover{
+      
+      box-shadow:5px 5px 30px rgba(110, 110, 110, 0.9);
+   }
+   .lright .pic:hover .click2{
+      font-size: 18px;
+      margin-top: -91px;
+      padding-left: 40px;
+      
+   }
+   .lright .pic:hover{
+      
+      box-shadow:5px 5px 30px rgba(110, 110, 110, 0.9);
+   }
+   .world{
+      text-align: justify;
+   }
+    /*more_____________________________________________*/
+    .more{
+      height: 500px;
+      margin-top: 30px;
+      padding: 0 100px;
+      
+    }  
+   
+   .morem{
+      float: left;
+      width: 400px;
+      height: 400px;
+      background-image: url(../img/more.png);
+      background-size:cover;
+   }
+  .moreworld{
+     padding-top: 50px;
+     vertical-align: center;
+     text-align: center;
+     line-height: 1.5;
+  }
+  .moreworld .click{
+     color: coral;
+     font-size: 16px;
+     font-weight: bold;
+     padding: 7px;
+     border: coral 1px solid;
+     border-radius: 3px;
+  }
+  .moreworld .click:hover{
+     color:  rgb(247, 187, 166);
+     border:rgb(247, 187, 166) 1px solid;
+  }
+  .em8{
+     font-size: 20px;
+     font-style: normal;
+     font-weight: bolder;
+     font-family:me;
+  }
+
+ 
