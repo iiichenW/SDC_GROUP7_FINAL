@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+    <title>Group 7: Industry 4.0</title>
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./font/all.css">
+     <link rel="stylesheet" href="./css/base.css">
+     <link rel="stylesheet" href="./css/Driving Force.css">
+</head>
+<body>
+    
+    <header>
+        <!--顶部导航条-->
+        <div class="topbar-wrapper">
+           <div class="topbar w clearfix">
+               <ul class="topbarleft" style="font-family: me;">
+                   <li style="font-style: italic;" ><p>Group 7</p></li>
+                   <li><p>&nbsp;&nbsp; Industry 4.0</p></li>
+               </ul>
+               <ul class="topbarright about">
+                   <li><a href="About Us.html" > About Us</a></li>
+               </ul>
+               <ul class="topbarright">
+                   <li><a href="efforts.html">Fur Free Alliance</a></li>
+                   <li class="line">|</li>
+                   <li class="background"><a href="Driving Force.html">Driving Force
+                    <div class="out">
+                        <ul>
+                            <li class="out1">
+                                <a href="#here">Revenue Map</a>
+                            </li><br>
+                            <li class="out1">
+                                <a href="#here4">Data and Variables 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                            </li><br>
+                            <li class="out1">
+                                <a href="#here2">Methodology and Steps</a>
+                            </li><br>
+                            <li class="out1">
+                                <a href="#here3">Factors That Drive the Revenue of Luxury Industry</a>
+                            </li><br>
+                        
+                        </ul>
+                   </a></li>
+                   <li class="line">|</li>
+                   <li><a href="victims.html">Victims</a></li>
+                   <li class="line">|</li>
+                   <li class="background"><a href="index.html">Background
+                   </a></li>                
+               </ul>  
+           </div>
+        </div>
+       
+   </header>
+    <main>
+        
+        <div class="top  clearfix " id="here">
+            <p class="title11"> 
+                <br><br> What Factors Drive the Revenue of Luxury Industry?<br>
+                <em>Click !</em> <br>
+            </p>
+            <a href="revenuemap.html">
+                <div class="map3"></div>
+            </a>
+            <p class="title" id="here4"> 
+                <br> Data and Variables <br>
+                <em>Click on the title to get the data!</em>
+            </p>
+            <ul class="list w">
+                <li><a href="http://hdr.undp.org/en/data" > Income Index</a>
+                     
+                    Gross national income (GNI) per capita (Purchasing power parity $) that can measure the extent to which the distribution of income among individuals. 0 represents perfect equality, while an index of 1 implies perfect inequality.
+
+                </li><br>
+                <li><a href=" https://data.worldbank.org/indicator/SP.URB.TOTL?name_desc=false" > Urban Population</a>
+                     
+                    People living in urban areas as defined by national statistical offices. It is calculated using World Bank population estimates and urban ratios from the United Nations World Urbanization Prospects.
+  
+                </li><br>
+                <li><a href=" https://www.transparency.org/en/cpi" > Corruption Perception Score</a>
+                     
+                    A score of the perceived levels of public sector corruption determined by expert assessments and opinion surveys on a scale from 100 (very clean) to 0 (highly corrupt).
+  
+                </li><br>
+                <li><a href="http://hdr.undp.org/en/data " > Education Index </a>
+                     
+                    A combination of average adult Years of Schooling and Expected Years of Schooling for children, each receiving 50% weighting. The value of it is between 0(Low education)~ 1 (high education).
+
+  
+                </li><br>
+                <li><a  href="https://data.worldbank.org/indicator/ST.INT.ARVL" > International Arrivals </a>
+                     
+                     The number of tourists who travel to a country other than that in which they have their usual residence, but outside their usual environment, for a period not exceeding 12 months and whose main purpose in visiting is other than an activity remunerated from within the country visited.
+  
+                </li><br><br>
+                <li id="here2" style="text-align: right; color:  rgb(173, 173, 173)"> *The natural logarithms transformations of variables are used in the model.</li>
+            </ul>
+
+            <p class="title" > 
+                <br> Methodology
+            </p>
+            <div class="method" id="Methodology" >
+            </div> 
+            
+        </div>
+        
+        <div class="middle w clearfix" >
+            <p class="key">
+                Steps
+            </p>
+            <div class="box" >
+                <!-- Correlation -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<div id="correlation" class="left left1"></div>
+<script  src="correlation.js"> </script>
+                
+                <p class="right ymm ">
+                    <em class="ext" style="font-size: 16px;">Step 1 Variable Test</em><br><br>
+
+The correlation coefficient between <em> ln Income Index</em> and <em>ln Education index </em>is very high (0.8219, close to 1). <br><br> But the Variance Inflation Factor (VIF) of all variables are less than 10, there is no high collinearity between variables.
+
+                   </p>
+            </div>
+            <div class="box">
+                <div class="left" id="Unit Root Test">
+                </div>
+                <p class="right">
+                    <em class="ext" style="font-size: 16px;">Step 2 Unit Root Test</em><br><br>All variables pass the Unit Root Test at the level form. <br><br> 
+                    The panel data is <em>stationary.</em> <br><br>
+                    Therefore, it is no necessary to conduct the Cointegration Test.</p>
+            </div>
+            <div class="box">
+                <div class="left" id="newnew">
+                </div>
+                <p class="right"><br><br>
+                    <em> FT</em>- F-test <br>
+                    <em>PM</em>- Pooled Regression Model <br>
+                     <em>FM </em>- Fixed Effective Model <br>
+                         <em>RM</em>- Random Effective Model <br>
+                             <em>ST</em>- Serial Correlation Test <br>
+                                 <em>HT</em>- Heteroskedasticity Test <br>
+                                     <em>CT</em>- Cross-sectional Dependence Test <br>
+                                         <em>CHT</em>- Classical Hausman Test</p>
+            </div>
+            
+            
+        </div>
+        <p class="ex ext w" >Step 3 Model Selection</p>
+        <p class="ex w">
+The result of F-test shows the <em>Fixed Effect Model</em>  is a good choice. However, the panel data
+has the <em> Serial Correlation, Heteroskedasticity, Cross-sectional Dependence</em>. Hence,
+the <em> Modified Hausman Test </em>are used to determine which the Fixed Effects Model or the
+Random Effects model is more appropriate for the data. The Modified Hausman Test
+suggests that the <em>Fixed Effect Model</em>  is more suitable. <br>
+<br>
+<br>
+         </p>
+         <p class="ex ext w" >Step 4 Estimation</p>
+        <p class="ex w" id="here3">
+        Due to the existence of Serial Correlation, Heteroskedasticity, Cross-sectional Dependence,
+        we use <em> Fixed Effect Model with Robust Standard Error </em>to improve the accuracy of its estimation results.
+        <br>
+        <br>
+        <br>
+                    
+         </p>
+         <p></p>
+        <div class="fan w clearfix">
+            <p class="key" >
+                What Factors Drive the Revenue of Luxury Industry and How? <br>
+                <em>*When all other variables remain constant</em>
+            </p>
+            <ul>
+                
+                <li><div class="x1 x" ></div>
+                <p><em>&nbsp; &nbsp; Income Index </em><br> increases by 1 %，the revenue of luxury good markets will increase by 2.14% million dollars ($ 21,400).
+                    </p>
+                </li>
+                <li><div class="x2 x"></div>
+                <p>
+                    <em> &nbsp; Urban Population</em><br>  increases by 1 %，the revenue of luxury good markets will increase by 0.97% million dollars
+                    ($ 9,700).
+                    </p>
+                </li>
+                <li><div class="x3 x"></div>
+                <p><em>&nbsp; &nbsp; &nbsp;&nbsp;  Corruption <br>&nbsp;&nbsp;   Perception Score</em><br>  decreases by 1%，the revenue of luxury goods markets will decrease by 0.35% million dollars ($ 3,500).</p>
+                </li>
+                <li><div class="x4 x"></div>
+                <p> <em>&nbsp; &nbsp; Education Index</em><br>  has no significant influence on the revenue of luxury good markets.</p>
+                </li>
+            </ul>
+            <ul>
+    
+                <li><div class="x6 x"></div>
+                <p><br><em>International Arrivals </em> <br> increases by 1%，the revenue of luxury goods markets will decrease by 0.11% million dollars
+                    ($1,100 dollars).
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+
+    
+       </main>
+       <footer>
+        <div class="up w clearfix">
+            <ul>
+                <li>
+                    <p class="uleft1">
+                        <em> About Group 'Industry 4.0'</em><br><br>
+                        Our group is made of 4 students from CASA, UCL. We have the common concern on the wildlife protection. We try to explore the Inseparable relationship between luxury industry and wildlife trade through the visualization of data from CITES and the driving force behind luxury industry. 
+                    </p>
+                </li>
+                <li>
+                    <p class="uleft2">
+                        <em> About Website</em><br><br>
+                        This website is an assignment of our course——Spatial Data Capture Storage and Analysis. Apart from the purpose of learning website building skills, this website intends to analyze the wildlife trade from the dataset of CITES in the period of 2012-2018. <br> Through presenting the truth we hope to reveal the Inseparable relationship between luxury industry and wildlife trade，  then recall people’s awareness of protecting wildlife by consuming less luxury goods made from wild animals.
+                    </p>
+                </li>
+                <li>
+                    <p class="uleft3">
+                        <em> About Us</em><br><br>
+                        The Centre for Advanced Spatial Analysis (CASA) is an interdisciplinary research institute focusing on the science of cities within The Bartlett Faculty of the Built Environment at UCL. 
+                    </p>
+                </li>
+                <li>
+                    <p class="uleft4">
+                        <em> Contract Us</em><br><br>
+                        This is an assignment. <br>
+                        Please contact us via CASA, UCL, UK, thank you.
+                    </p>
+                </li>
+               
+            </ul>
+            <div class="down w clearfix">
+                <p><br>
+                    Copyright © 2020 Group 7 | Industry 4.0. All Rights Reserved.<br>
+                    All other trademarks and copyrights are the property of their respective holders.
+                </p>
+            </div>
+        </div>
+        
+    </footer> 
+<!-- Methodology -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<div id="Methodology" ></div>
+<script  src="Methodology.js"> </script>
+<link type="text/css" rel="stylesheet" href="css/methodolody.css"></link>
+
+
+<!-- Correlation -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<div id="correlation"></div>
+<script  src="correlation.js"> </script>
+
+
+<!-- Unit Root Test -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<div id="Unit Root Test"></div>
+<script  src="Unit Root test.js"> </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
